@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#fff0e9",
+              "surface-container-highest": "#dcdddc",
+              "primary-fixed": "#f9873e",
+              "tertiary-fixed-dim": "#efb118",
+              "on-secondary-fixed-variant": "#006761",
+              "error-dim": "#b92902",
+              "on-primary-fixed-variant": "#542200",
+              "on-secondary-fixed": "#004844",
+              "outline": "#767776",
+              "on-error": "#ffefec",
+              "secondary-fixed": "#7cf6ec",
+              "surface-container": "#e8e8e7",
+              "surface-tint": "#964300",
+              "inverse-surface": "#0d0e0e",
+              "on-tertiary": "#fff1dd",
+              "on-background": "#2e2f2f",
+              "on-error-container": "#520c00",
+              "on-primary-container": "#451b00",
+              "secondary": "#006761",
+              "surface-variant": "#dcdddc",
+              "tertiary-container": "#febf2a",
+              "error-container": "#f95630",
+              "surface-bright": "#f7f6f5",
+              "secondary-fixed-dim": "#6ce8de",
+              "on-primary-fixed": "#100300",
+              "surface-dim": "#d4d4d4",
+              "secondary-dim": "#005a55",
+              "primary-container": "#f9873e",
+              "outline-variant": "#adadac",
+              "tertiary": "#775600",
+              "background": "#f7f6f5",
+              "on-surface": "#2e2f2f",
+              "tertiary-dim": "#684b00",
+              "on-tertiary-fixed-variant": "#624600",
+              "surface-container-low": "#f1f1f0",
+              "secondary-container": "#7cf6ec",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed": "#3e2b00",
+              "primary-fixed-dim": "#e97b32",
+              "inverse-on-surface": "#9d9d9c",
+              "surface": "#f7f6f5",
+              "on-secondary": "#befff8",
+              "on-surface-variant": "#5b5c5b",
+              "inverse-primary": "#f9873e",
+              "error": "#b02500",
+              "surface-container-high": "#e2e2e1",
+              "on-secondary-container": "#005c57",
+              "on-tertiary-container": "#573e00",
+              "primary-dim": "#843a00",
+              "tertiary-fixed": "#febf2a",
+              "primary": "#964300"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #f7f6f5;
+        color: #2e2f2f;
+      }
+    </style>
+</head>
+<body class="font-body selection:bg-secondary-container">
+<!-- TopNavBar Suppression Check: This is a Transactional/Success screen. 
+         However, for editorial branding, a minimal persistent header is often used. 
+         Following the instruction to suppress shells on Task-Focused/Success screens, 
+         but ensuring the brand identity is clear. -->
+<main class="min-h-screen pb-20">
+<!-- Hero Section: Dynamic Asymmetry -->
+<section class="relative pt-12 md:pt-20 px-6 overflow-hidden">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<!-- Message Content -->
+<div class="md:col-span-7 z-10">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span class="font-label text-xs font-semibold tracking-widest uppercase">Order Confirmed</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] mb-6 tracking-tight">
+                        Your pet's treats are <span class="text-primary">on the way!</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-8 leading-relaxed">
+                        Order #DS-12345 has been received and is being carefully curated by our team. We'll notify you as soon as it leaves the sanctuary.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-primary-fixed-dim transition-all duration-200 active:scale-95 shadow-lg shadow-primary/10">
+                            Continue Shopping
+                        </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container-high transition-all duration-200 active:scale-95">
+                            Track Order
+                        </button>
+</div>
+</div>
+<!-- Hero Image Overlap -->
+<div class="md:col-span-5 relative mt-12 md:mt-0">
+<div class="aspect-square w-full rounded-xl overflow-hidden shadow-2xl relative z-0 scale-105 md:translate-x-12 translate-y-4">
+<img alt="Happy dog catching a treat" class="w-full h-full object-cover" data-alt="A joyful golden retriever in a sun-drenched minimalist living room jumping slightly to catch a gourmet treat in mid-air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUqeGSp-y-Uyung1rxHYD4-o8kJemqBaeo3eSkgNLFoCN7Qc16FVnj3X-CBM1hju6TBI2ai1SAhKOdARHM7YDzzzO9rwc1s_I9v9kNfQouDsX71d3GNbAy3Z0GR7aFtfBRlmk0v69g5gp4uGQ3ggpPH29h-aj2IFWdY5x36VUBO7tYLA7OfLYOu03nDmE2lUVbQiJUbilRX2_PTQxg8Xrlvvnhq5TJ-4pIGhVmf-bOQoaDb_KtVTQPn1M4NYuPUXHI9IRyziEkS_7l"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-6 -left-6 w-32 h-32 bg-tertiary-container rounded-full z-[-1] opacity-50 blur-2xl"></div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Order Summary -->
+<section class="max-w-6xl mx-auto px-6 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Main Order Details (Bento Span 2) -->
+<div class="md:col-span-2 space-y-6">
+<div class="bg-surface-container-lowest p-8 rounded-lg">
+<h2 class="font-headline text-2xl font-bold mb-8">Order Summary</h2>
+<div class="flex items-center gap-6 group">
+<div class="w-24 h-24 rounded-md overflow-hidden flex-shrink-0 bg-surface-container-low">
+<img alt="Organic Salmon Dog Food" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of premium organic salmon dog kibble pieces with fresh herbs and salmon fillet in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0R0XWjRJkCsI8EXRMm9ZIXOHmk8MNYAhmTa6WLEgKUaj1sloUfdvR2j9UiP_bWrqCYkblK-i_MLly_SFouMVLT_BH19obTfLuYZsluzzJlImIPLYKOHKh8a-kx1KPVBR2OUtYQOgFZadrMK7LyTTR3gaiLmgWiTfVA3qXKaKMkiuFAQGCAHYkL8uCkXKY9frkg-APU3HAqw1GIzBealR4e3ZOLyzJt9e4oXuTlXGBJhmo5a5ILpVaJYKi6m7gvxhEFHdxUyJK6m3a"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-lg">Organic Salmon Dog Food</h3>
+<p class="text-on-surface-variant text-sm">Large Breed • 12kg Bag</p>
+</div>
+<p class="font-headline font-bold text-lg">$89.00</p>
+</div>
+<div class="mt-2 inline-flex items-center gap-1 px-2 py-1 bg-secondary-container/30 text-secondary text-[10px] font-bold rounded uppercase tracking-wider">
+<span class="material-symbols-outlined text-[12px]" data-icon="eco">eco</span>
+                                    Sustainability Certified
+                                </div>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant/15 space-y-4">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal</span>
+<span>$89.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Eco-Friendly Shipping</span>
+<span class="text-secondary font-medium">Free</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Taxes</span>
+<span>$7.12</span>
+</div>
+<div class="flex justify-between pt-4 text-xl font-headline font-extrabold text-on-surface">
+<span>Total Paid</span>
+<span class="text-primary">$96.12</span>
+</div>
+</div>
+</div>
+<!-- Delivery Estimate Card -->
+<div class="bg-surface-container-low p-8 rounded-lg flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-3xl" data-icon="local_shipping">local_shipping</span>
+</div>
+<div>
+<p class="text-sm font-label uppercase tracking-widest text-on-surface-variant font-bold mb-1">Estimated Delivery</p>
+<h4 class="font-headline text-xl font-bold">Tuesday, Oct 24th — Thursday, Oct 26th</h4>
+</div>
+</div>
+</div>
+<!-- Secondary Info (Column 3) -->
+<div class="space-y-6">
+<!-- Shipping To -->
+<div class="bg-surface-container-lowest p-8 rounded-lg">
+<div class="flex items-center gap-3 mb-4 text-primary">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<h3 class="font-headline font-bold">Shipping To</h3>
+</div>
+<p class="font-semibold text-on-surface">Alex Mercer</p>
+<p class="text-on-surface-variant leading-relaxed mt-1">
+                            1284 Sanctuary Lane<br/>
+                            Pacific Grove, CA 93950<br/>
+                            United States
+                        </p>
+</div>
+<!-- Payment Method -->
+<div class="bg-surface-container-lowest p-8 rounded-lg">
+<div class="flex items-center gap-3 mb-4 text-primary">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<h3 class="font-headline font-bold">Payment</h3>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-surface-container p-2 rounded">
+<span class="material-symbols-outlined" data-icon="credit_card">credit_card</span>
+</div>
+<div>
+<p class="font-semibold text-on-surface">Visa ending in 4242</p>
+<p class="text-on-surface-variant text-sm">Billed $96.12</p>
+</div>
+</div>
+</div>
+<!-- Help Card -->
+<div class="bg-tertiary text-on-tertiary p-8 rounded-lg relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="font-headline font-bold text-xl mb-2">Need a hand?</h3>
+<p class="text-on-tertiary/80 text-sm mb-6">Our pet care experts are available 24/7 to help with your order.</p>
+<a class="inline-flex items-center gap-2 font-bold hover:gap-3 transition-all" href="#">
+                                Chat with Care Team
+                                <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Abstract glow -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary-container/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Upsell Editorial Section -->
+<section class="max-w-6xl mx-auto px-6 mt-24">
+<div class="bg-surface-container-high rounded-lg p-12 relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2 z-10">
+<h2 class="font-headline text-3xl font-extrabold mb-4">Complete the Ritual</h2>
+<p class="text-on-surface-variant mb-8 text-lg">Customers who chose the Organic Salmon also loved our hand-thrown ceramic cooling bowls. Perfect for keeping water fresh all day.</p>
+<button class="bg-on-surface text-surface px-8 py-4 rounded-full font-headline font-bold hover:opacity-90 transition-all">
+                        View Sanctuary Goods
+                    </button>
+</div>
+<div class="md:w-1/2 flex justify-center z-10">
+<div class="relative group">
+<img alt="Ceramic dog bowl" class="w-64 h-64 object-cover rounded-full border-8 border-surface-container-lowest shadow-xl" data-alt="A minimalist hand-thrown ceramic dog bowl with a soft matte teal glaze sitting on a clean wooden floor with morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSGxvH6DK92FW8zW0lyP5kKY5rGgkvs32jKIqx_bG0sdXfpeoLgcmy3F3kW3yjNBfantrKlx21VeiglAbpqARHxDTJwFMf7CliNsYPLdmiSLAKdhE2eWbmwHagpz0aQR_PGkJN6rtb72DzY1RHdRAoOVMgdjoiPTbirvKJg2xAmH9kmXp2rDN6Ki3yCOy7XLgTdN-K8uTmVoWOvLoOYslyG7je2H-BHiAyzL4Z9P88JB32A-cW_-3xRx7Vtw26OdQ4CdwRZ3qv8q8D"/>
+<div class="absolute -top-4 -right-4 bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center font-bold rotate-12 shadow-lg">
+                            New
+                        </div>
+</div>
+</div>
+<!-- Decorative background text -->
+<div class="absolute -bottom-10 -right-10 font-headline font-black text-[12rem] text-on-surface/5 select-none pointer-events-none uppercase">
+                    Care
+                </div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar: Suppressed because this is a focused confirmation page.
+         Only TopNavBar for brand anchor is present as part of the Sanctuary header. -->
+</body></html>
