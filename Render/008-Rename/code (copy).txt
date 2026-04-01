@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f1f1f0",
+              "tertiary": "#775600",
+              "on-tertiary-fixed-variant": "#624600",
+              "secondary": "#006761",
+              "on-primary-fixed": "#100300",
+              "on-tertiary-container": "#573e00",
+              "on-primary-fixed-variant": "#542200",
+              "on-tertiary-fixed": "#3e2b00",
+              "surface-container-highest": "#dcdddc",
+              "on-secondary-fixed": "#004844",
+              "inverse-primary": "#f9873e",
+              "surface": "#f7f6f5",
+              "tertiary-fixed": "#febf2a",
+              "primary-container": "#f9873e",
+              "surface-dim": "#d4d4d4",
+              "tertiary-fixed-dim": "#efb118",
+              "tertiary-container": "#febf2a",
+              "on-primary": "#fff0e9",
+              "inverse-on-surface": "#9d9d9c",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed-variant": "#006761",
+              "surface-container-high": "#e2e2e1",
+              "surface-tint": "#964300",
+              "background": "#f7f6f5",
+              "on-error-container": "#520c00",
+              "on-secondary": "#befff8",
+              "primary-fixed-dim": "#e97b32",
+              "inverse-surface": "#0d0e0e",
+              "outline": "#767776",
+              "on-error": "#ffefec",
+              "on-secondary-container": "#005c57",
+              "tertiary-dim": "#684b00",
+              "surface-bright": "#f7f6f5",
+              "on-surface": "#2e2f2f",
+              "secondary-dim": "#005a55",
+              "surface-variant": "#dcdddc",
+              "on-primary-container": "#451b00",
+              "secondary-fixed-dim": "#6ce8de",
+              "secondary-container": "#7cf6ec",
+              "error": "#b02500",
+              "primary-dim": "#843a00",
+              "secondary-fixed": "#7cf6ec",
+              "primary-fixed": "#f9873e",
+              "primary": "#964300",
+              "outline-variant": "#adadac",
+              "on-background": "#2e2f2f",
+              "error-dim": "#b92902",
+              "error-container": "#f95630",
+              "on-tertiary": "#fff1dd",
+              "on-surface-variant": "#5b5c5b",
+              "surface-container": "#e8e8e7"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #f7f6f5;
+            color: #2e2f2f;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar Execution from JSON -->
+<nav class="w-full top-0 sticky z-50 bg-[#f7f6f5] dark:bg-[#1a1a19] transition-colors duration-300">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-bold tracking-tighter text-[#2e2f2f] dark:text-[#f7f6f5] font-['Plus_Jakarta_Sans']">The Sanctuary</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-[#2e2f2f] dark:text-[#adadac] hover:text-[#964300] transition-colors font-['Plus_Jakarta_Sans'] text-sm tracking-tight" href="#">Shop</a>
+<a class="text-[#2e2f2f] dark:text-[#adadac] hover:text-[#964300] transition-colors font-['Plus_Jakarta_Sans'] text-sm tracking-tight" href="#">Concierge</a>
+<a class="text-[#2e2f2f] dark:text-[#adadac] hover:text-[#964300] transition-colors font-['Plus_Jakarta_Sans'] text-sm tracking-tight" href="#">Our Story</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hover:opacity-80 transition-opacity duration-200 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[#2e2f2f] dark:text-[#f7f6f5]">shopping_bag</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-200 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[#2e2f2f] dark:text-[#f7f6f5]">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 md:px-8 py-12 flex flex-col md:flex-row gap-12">
+<!-- Sidebar Navigation -->
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="sticky top-32 space-y-2">
+<h2 class="font-headline text-2xl font-extrabold tracking-tight mb-8 px-4">Settings</h2>
+<nav class="space-y-1">
+<a class="flex items-center gap-4 px-4 py-3 bg-primary-container text-on-primary-container rounded-full font-semibold transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label text-sm">Profile Info</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">shield</span>
+<span class="font-label text-sm">Security</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="font-label text-sm">Notifications</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label text-sm">Saved Payments</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all mt-8" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label text-sm">Sign Out</span>
+</a>
+</nav>
+</div>
+</aside>
+<!-- Main Content Area -->
+<section class="flex-grow space-y-12">
+<!-- Profile Info Section -->
+<div class="bg-surface-container-lowest rounded-lg p-8 md:p-12 space-y-10">
+<div class="flex flex-col md:flex-row items-center gap-8 border-b border-outline-variant/10 pb-10">
+<div class="relative group">
+<div class="w-32 h-32 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="portrait of a smiling woman with soft natural lighting and a minimalist cream background looking directly at camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfAQtQ-IMdyiJo4hKrxPGO_QI9BGmcASmd_9Lmn8vZiDXrDwRjRc4cSOl44zKBDq68Bdok6fiEJqNkYmhssFcNiARnr2rSPMR0RGKE6bvn86fx8yG3gPz0RnoJtqp4lyWW4rvco-7ijShwC6tELFfhRzFi_W_1XMN0lD_2N42cDXHsnCnQfqwbjaE3z7u8aBDiKqHe8pVhZm9eFghkobhngPUN9aDTGf13DfK7nHgiUw6biC1q954bY-GuiydrjZDkwYVKeldbTCge"/>
+</div>
+<button class="absolute bottom-0 right-0 bg-primary text-on-primary p-2 rounded-full shadow-lg scale-90 hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+<div class="text-center md:text-left">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Elena Richardson</h3>
+<p class="font-body text-on-surface-variant mt-1">Pet Parent to Barnaby &amp; Willow</p>
+<div class="mt-4 flex flex-wrap justify-center md:justify-start gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-xs font-semibold">Gold Member</span>
+<span class="bg-surface-container-high text-on-surface-variant px-4 py-1 rounded-full text-xs font-semibold">Joined Jan 2023</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">First Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary text-on-surface font-label" type="text" value="Elena"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">Last Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary text-on-surface font-label" type="text" value="Richardson"/>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary text-on-surface font-label" type="email" value="elena.r@sanctuarypets.com"/>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">Bio</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg px-6 py-4 focus:ring-2 focus:ring-primary text-on-surface font-label resize-none" rows="3">Passionate about organic pet wellness and sustainable living. Proud golden retriever and ragdoll cat owner.</textarea>
+</div>
+</div>
+<div class="flex justify-end pt-4">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 rounded-full font-bold hover:bg-primary-fixed-dim transition-colors shadow-sm">
+                        Save Changes
+                    </button>
+</div>
+</div>
+<!-- Bento Sections for Preferences -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Notifications Card -->
+<div class="bg-surface-container-low rounded-lg p-8 space-y-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">notifications_active</span>
+<h4 class="font-headline text-lg font-bold">Preferences</h4>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-full">
+<span class="text-sm font-medium">Order Updates</span>
+<div class="w-12 h-6 bg-primary rounded-full relative cursor-pointer">
+<div class="absolute right-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-full">
+<span class="text-sm font-medium">Promotional News</span>
+<div class="w-12 h-6 bg-outline-variant/30 rounded-full relative cursor-pointer">
+<div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-full">
+<span class="text-sm font-medium">Pet Care Reminders</span>
+<div class="w-12 h-6 bg-primary rounded-full relative cursor-pointer">
+<div class="absolute right-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pet Profile Quick Links -->
+<div class="bg-surface-container-highest/40 rounded-lg p-8 flex flex-col justify-between">
+<div>
+<h4 class="font-headline text-lg font-bold mb-2">My Sanctuary Pets</h4>
+<p class="text-sm text-on-surface-variant mb-6">Manage specific profiles for your companions.</p>
+<div class="flex -space-x-3 mb-6">
+<img class="w-12 h-12 rounded-full border-4 border-surface object-cover" data-alt="close up of a golden retriever puppy looking up with warm brown eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ1CiTVzspDUHobrVv3kJIcZSICv0JxaIPtdEmldKsiFvXx5O4Mstn-GzANZViPCK6BWMtgzXrlQwKeyop7NQI5uLWifdg7653A8bHi35Hct-FGq_g39_CN9gLzjG-HQADrFKx3i8xKNse5NMT5aOnk-S5sWgElLO36UypNtp8_DtML0kMEjJjHOgLD3ZC2PdXyZZkMu53m3Bcv_am94ARjffRTVDQfgmUzKt6EyL9K-gI_-LWHEesny6q4sHvpgtoX6-OrtwsXN4e"/>
+<img class="w-12 h-12 rounded-full border-4 border-surface object-cover" data-alt="majestic long-haired ragdoll cat with bright blue eyes on a soft white blanket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrp7SLYXtNXaHRZplUDulLKv8Eyuhcv0DPkwvr33dcvgB66wjjUaj_7QgPjP32CQitjPb2V0o-3FpJvNtgOV107dLC30Rb_eoEvIzu4iRWx14mnPQE-Rzd-QMeST6yIBQwdlBvzVxEwb3IXlf1FgvRGuDOgPCo4nCvPtvI_h5ZgD6eqsurr3SeOdhyovT6tF_9I6sMyOgj1cM_41jNWWUXHoAr5ZVKxWJPUXLoTcJgsaXTe9Kou3X8OESHN6sr9EgeYbpwnIIhqXRy"/>
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-sm">add</span>
+</div>
+</div>
+</div>
+<button class="w-full py-4 bg-white rounded-full font-bold text-sm text-primary border border-primary/10 hover:bg-primary/5 transition-colors">
+                        Manage Pet Profiles
+                    </button>
+</div>
+</div>
+<!-- Security Tonal Highlight -->
+<div class="bg-secondary-container/20 rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 border border-secondary/5">
+<div class="bg-secondary p-4 rounded-full">
+<span class="material-symbols-outlined text-white text-3xl">verified_user</span>
+</div>
+<div class="flex-grow text-center md:text-left">
+<h4 class="font-headline text-xl font-bold text-on-secondary-container">Two-Factor Authentication</h4>
+<p class="text-sm text-on-secondary-container/80 mt-1">Add an extra layer of protection to your sanctuary account. Highly recommended for premium members.</p>
+</div>
+<button class="bg-secondary text-white px-8 py-3 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
+                    Enable Now
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Execution from JSON (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-8 pt-4 md:hidden bg-[#ffffffcc] dark:bg-[#1a1a19cc] backdrop-blur-md border-t border-[#adadac]/15 shadow-[0_-4px_24px_rgba(46,47,47,0.04)] z-50 rounded-t-[2rem]">
+<div class="flex flex-col items-center justify-center text-[#2e2f2f] dark:text-[#adadac] px-5 py-2 hover:bg-[#f1f1f0] dark:hover:bg-[#252524] rounded-full transition-all">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2e2f2f] dark:text-[#adadac] px-5 py-2 hover:bg-[#f1f1f0] dark:hover:bg-[#252524] rounded-full transition-all">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Favorites</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2e2f2f] dark:text-[#adadac] px-5 py-2 hover:bg-[#f1f1f0] dark:hover:bg-[#252524] rounded-full transition-all">
+<span class="material-symbols-outlined">package_2</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Orders</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#f9873e] dark:bg-[#964300] text-white rounded-full px-5 py-2 animate-pulse-slow">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Settings</span>
+</div>
+</nav>
+<footer class="max-w-7xl mx-auto px-8 py-16 mt-12 border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-xl font-bold tracking-tighter text-on-surface font-headline">The Sanctuary</div>
+<div class="flex gap-8 text-sm font-label text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Accessibility</a>
+</div>
+<p class="text-xs text-outline-variant font-body">© 2024 The Sanctuary Pet Store. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
