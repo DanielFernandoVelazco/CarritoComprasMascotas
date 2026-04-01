@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#fff0e9",
+              "surface-container-highest": "#dcdddc",
+              "primary-fixed": "#f9873e",
+              "tertiary-fixed-dim": "#efb118",
+              "on-secondary-fixed-variant": "#006761",
+              "error-dim": "#b92902",
+              "on-primary-fixed-variant": "#542200",
+              "on-secondary-fixed": "#004844",
+              "outline": "#767776",
+              "on-error": "#ffefec",
+              "secondary-fixed": "#7cf6ec",
+              "surface-container": "#e8e8e7",
+              "surface-tint": "#964300",
+              "inverse-surface": "#0d0e0e",
+              "on-tertiary": "#fff1dd",
+              "on-background": "#2e2f2f",
+              "on-error-container": "#520c00",
+              "on-primary-container": "#451b00",
+              "secondary": "#006761",
+              "surface-variant": "#dcdddc",
+              "tertiary-container": "#febf2a",
+              "error-container": "#f95630",
+              "surface-bright": "#f7f6f5",
+              "secondary-fixed-dim": "#6ce8de",
+              "on-primary-fixed": "#100300",
+              "surface-dim": "#d4d4d4",
+              "secondary-dim": "#005a55",
+              "primary-container": "#f9873e",
+              "outline-variant": "#adadac",
+              "tertiary": "#775600",
+              "background": "#f7f6f5",
+              "on-surface": "#2e2f2f",
+              "tertiary-dim": "#684b00",
+              "on-tertiary-fixed-variant": "#624600",
+              "surface-container-low": "#f1f1f0",
+              "secondary-container": "#7cf6ec",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed": "#3e2b00",
+              "primary-fixed-dim": "#e97b32",
+              "inverse-on-surface": "#9d9d9c",
+              "surface": "#f7f6f5",
+              "on-secondary": "#befff8",
+              "on-surface-variant": "#5b5c5b",
+              "inverse-primary": "#f9873e",
+              "error": "#b02500",
+              "surface-container-high": "#e2e2e1",
+              "on-secondary-container": "#005c57",
+              "on-tertiary-container": "#573e00",
+              "primary-dim": "#843a00",
+              "tertiary-fixed": "#febf2a",
+              "primary": "#964300"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        background-color: #f7f6f5;
+        color: #2e2f2f;
+      }
+      h1, h2, h3 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col items-center justify-center p-6">
+<!-- Transactional Header (Suppressed Global Nav as per mandate) -->
+<header class="fixed top-0 left-0 w-full px-8 py-6 flex justify-center">
+<div class="text-2xl font-extrabold text-primary tracking-tight font-headline">
+            The Digital Sanctuary
+        </div>
+</header>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-2xl text-center space-y-12">
+<!-- Illustrative Bento Section -->
+<div class="relative group">
+<div class="grid grid-cols-12 gap-4">
+<!-- Asymmetric Image Frame -->
+<div class="col-span-12 md:col-span-7 bg-surface-container-low rounded-lg overflow-hidden relative min-h-[300px]">
+<img alt="A gentle Golden Retriever looking slightly confused with a tilted head in a soft sunlit living room" class="absolute inset-0 w-full h-full object-cover" data-alt="A gentle Golden Retriever looking slightly confused with a tilted head in a soft sunlit living room with warm golden hour lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf0dMQwM5nXIYRZPRwK0vbdJ7s0o_udo_IChmg7_fLlO93OAsgPQLk6F0_GlwHct7Ruv9CNc0u9A2F0TtpO1_RAtW3lJYhn97_BwQbydtJtrDBDKtgDVlqLdCi8bFkctbOh-LhnDCuf3ax0fUMHltpgzzxJeQVEERtkNcwwlJMUoh_vZcV8Kn2ftFxiqYyNGzbvi18B-sZmKs1VQXAxPpV-njcfSJsdsS1PBTCrJje1MCO8Oiz0DvObHwveqXxgB4amIFYdCIrTNAV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/40 to-transparent"></div>
+</div>
+<!-- Floating Semantic Cards -->
+<div class="hidden md:flex col-span-5 flex-col gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/15 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl mb-2" data-icon="credit_card_off">credit_card_off</span>
+<p class="text-label-sm font-medium text-on-surface-variant">Payment Paused</p>
+</div>
+<div class="bg-secondary-container p-6 rounded-lg flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-on-secondary-container text-4xl mb-2" data-icon="support_agent">support_agent</span>
+<p class="text-label-sm font-medium text-on-secondary-container">We're here to help</p>
+</div>
+</div>
+</div>
+<!-- Overlapping Visual Element (The Glow) -->
+<div class="absolute -bottom-6 -right-6 md:right-auto md:left-1/2 md:-translate-x-1/2 w-24 h-24 bg-primary-container rounded-full flex items-center justify-center shadow-lg transform rotate-12">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="error_outline">error_outline</span>
+</div>
+</div>
+<!-- Messaging Section -->
+<div class="space-y-4 px-4">
+<h1 class="text-display-sm md:text-display-md font-extrabold text-on-surface tracking-tight leading-tight">
+                Oops! Something went wrong with your payment
+            </h1>
+<p class="text-body-lg text-on-surface-variant max-w-md mx-auto leading-relaxed">
+                We couldn't process your transaction. Please check your payment details, ensure there are sufficient funds, and try again.
+            </p>
+</div>
+<!-- Contextual Help / Error Details -->
+<div class="bg-surface-container-low rounded-lg p-6 max-w-md mx-auto">
+<div class="flex items-center gap-4 text-left">
+<div class="bg-white p-3 rounded-full">
+<span class="material-symbols-outlined text-error" data-icon="priority_high">priority_high</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Transaction ID: #DS-88219</p>
+<p class="text-body-sm text-on-surface-variant">Status: Card Declined by Bank</p>
+</div>
+</div>
+</div>
+<!-- Actions Section -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+<button class="w-full sm:w-auto px-10 py-4 bg-primary-container text-on-primary-container font-headline font-bold rounded-full hover:bg-primary-fixed-dim transition-all active:scale-95 shadow-sm">
+                Try Again
+            </button>
+<button class="w-full sm:w-auto px-10 py-4 bg-surface-container-highest text-on-surface font-headline font-bold rounded-full hover:bg-surface-variant transition-all active:scale-95 border border-outline-variant/15">
+                Contact Support
+            </button>
+</div>
+</main>
+<!-- Focus Footer -->
+<footer class="fixed bottom-0 left-0 w-full py-8 text-center">
+<div class="flex items-center justify-center gap-6">
+<div class="flex items-center gap-2 opacity-60">
+<span class="material-symbols-outlined text-lg" data-icon="lock">lock</span>
+<span class="text-label-sm uppercase tracking-widest font-medium">Secure Checkout</span>
+</div>
+<div class="h-4 w-px bg-outline-variant/30"></div>
+<p class="text-label-sm opacity-60 font-medium">Questions? Call 1-800-SANCTUARY</p>
+</div>
+</footer>
+</body></html>
