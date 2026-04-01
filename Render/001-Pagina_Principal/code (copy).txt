@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Organic Salmon Dog Food | The Digital Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#542200",
+              "tertiary-dim": "#684b00",
+              "secondary-dim": "#005a55",
+              "surface-variant": "#dcdddc",
+              "outline": "#767776",
+              "on-tertiary": "#fff1dd",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#d4d4d4",
+              "on-error-container": "#520c00",
+              "surface": "#f7f6f5",
+              "secondary-fixed-dim": "#6ce8de",
+              "inverse-surface": "#0d0e0e",
+              "surface-container-highest": "#dcdddc",
+              "tertiary-fixed": "#febf2a",
+              "surface-container-low": "#f1f1f0",
+              "surface-container": "#e8e8e7",
+              "on-primary": "#fff0e9",
+              "on-primary-container": "#451b00",
+              "on-secondary": "#befff8",
+              "on-background": "#2e2f2f",
+              "surface-bright": "#f7f6f5",
+              "tertiary-fixed-dim": "#efb118",
+              "on-secondary-fixed-variant": "#006761",
+              "on-primary-fixed": "#100300",
+              "surface-container-high": "#e2e2e1",
+              "primary-container": "#f9873e",
+              "secondary": "#006761",
+              "primary-fixed-dim": "#e97b32",
+              "on-tertiary-fixed-variant": "#624600",
+              "on-surface-variant": "#5b5c5b",
+              "tertiary": "#775600",
+              "secondary-fixed": "#7cf6ec",
+              "on-surface": "#2e2f2f",
+              "primary": "#964300",
+              "inverse-on-surface": "#9d9d9c",
+              "on-tertiary-container": "#573e00",
+              "error-dim": "#b92902",
+              "error": "#b02500",
+              "primary-dim": "#843a00",
+              "surface-tint": "#964300",
+              "on-secondary-fixed": "#004844",
+              "on-secondary-container": "#005c57",
+              "inverse-primary": "#f9873e",
+              "secondary-container": "#7cf6ec",
+              "on-error": "#ffefec",
+              "error-container": "#f95630",
+              "background": "#f7f6f5",
+              "primary-fixed": "#f9873e",
+              "on-tertiary-fixed": "#3e2b00",
+              "tertiary-container": "#febf2a",
+              "outline-variant": "#adadac"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-[#f7f6f5] dark:bg-zinc-900 docked full-width top-0 z-50">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-[#964300] dark:text-[#FF8C42] tracking-tighter">The Digital Sanctuary</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#964300] dark:text-[#FF8C42] border-b-2 border-[#FF8C42] pb-1 font-bold transition-colors duration-200" href="#">Dogs</a>
+<a class="text-[#2e2f2f] dark:text-zinc-400 font-medium hover:text-[#964300] dark:hover:text-white transition-colors duration-200" href="#">Cats</a>
+<a class="text-[#2e2f2f] dark:text-zinc-400 font-medium hover:text-[#964300] dark:hover:text-white transition-colors duration-200" href="#">Fish</a>
+<a class="text-[#2e2f2f] dark:text-zinc-400 font-medium hover:text-[#964300] dark:hover:text-white transition-colors duration-200" href="#">Birds</a>
+<a class="text-[#2e2f2f] dark:text-zinc-400 font-medium hover:text-[#964300] dark:hover:text-white transition-colors duration-200" href="#">Small Pets</a>
+</div>
+<div class="flex items-center space-x-5">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">search</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors" data-icon="favorite">favorite</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors" data-icon="shopping_cart">shopping_cart</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors" data-icon="person">person</button>
+</div>
+</nav>
+<div class="bg-[#f1f1f0] dark:bg-zinc-800 h-px w-full"></div>
+</header>
+<main class="max-w-screen-2xl mx-auto px-6 md:px-12 py-12">
+<!-- Breadcrumbs -->
+<nav class="flex items-center space-x-2 text-sm text-on-surface-variant mb-10">
+<a class="hover:text-primary" href="#">Shop</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<a class="hover:text-primary" href="#">Dogs</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="font-medium text-on-surface">Dog Food</span>
+</nav>
+<!-- Product Detail Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Image Gallery Bento -->
+<div class="lg:col-span-7 grid grid-cols-4 gap-4">
+<div class="col-span-4 bg-surface-container-low rounded-lg overflow-hidden group relative">
+<img class="w-full h-[500px] object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="High-end organic dog food packaging with salmon illustration on a minimalist light background, professional studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyCi8dfrt3sIziANdfimSECsKEy_b_-oHCY7kqZRwUCBOJIZiGKTfc-zizp5phZ0JmxjZ6pfpsKLcdVpOxhXlH__dJ50K7KSmY1kF82EPeuojGCK5qsBb1iVv5GtNGPrv6aMDW_72-8Zgx9BfHOrwya-bg90GndtEH1lzkQGGgWSTBN8XNDgRFeWaNiCYEihMUYMKFvy559kCxwO3x0ieqquzpGjgVUXINuevBfrlrWEOWqwtgusf114zkDDlQQU9w-LHVc2uvzyOH"/>
+<div class="absolute top-6 left-6 flex flex-col gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-sm text-xs font-bold tracking-wider uppercase">Premium Organic</span>
+<span class="bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-sm text-xs font-bold tracking-wider uppercase">Best Seller</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<img class="w-full h-32 object-cover opacity-80 hover:opacity-100 transition-opacity cursor-pointer" data-alt="Close up of dry dog food kibble texture, showing high quality ingredients and natural color" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRTLGDAxqppRsSfc06ZGWcBnZkowbNmOZkydCM8jKcpuNtCyUlRm4z3FZ0QbQMPJvdcMNM_QeZ-Vzw3RK9GHV57OF5eZPLsnKIKTBzDCKdAgAcNEWiFmNwDTAAIBPVFdJveEq5aWTgO8jCiCBPa2luJ93TLdGuchDNAdEvl9vASWE1bPpGQip1gf5N8OUGQMu20d1QN5wYSDyy2EnAHLDDj-qdFC1VJIITp8TamURsWRzJV19rBDkIJ-OV4qWcFYUstWc0pFmiafXE"/>
+</div>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<img class="w-full h-32 object-cover opacity-80 hover:opacity-100 transition-opacity cursor-pointer" data-alt="Fresh raw salmon fillet with herbs, representing the primary ingredient of the dog food" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfMXX6XoDrO8H89IN8wSLwQL0-g7OAKt0dfPVG2xRFrPJCoutvSAaXdGK9QbN0OY9Cf4lX4mQeM-hYd_77DTyT1iLVcWOvDTVvXOaUTutYJwI8Vvz63vN5-Xp61okzHBPyabnB7YQEzLW09t5gOglTIsTcDLgk_2yuQpdogqtXW45uMKRwFusWgBn7ex0BnSTN-UVyBGJwU4MvGBjakQ77PdEb9IuPjMrnTOxMpBKk9oYXCvEpD020v2Ik22E7Xf7OvBVBQA8G9sbt"/>
+</div>
+<div class="bg-surface-container-low rounded-lg overflow-hidden relative">
+<img class="w-full h-32 object-cover opacity-80 hover:opacity-100 transition-opacity cursor-pointer" data-alt="Happy golden retriever dog sitting next to a bowl of food, looking energetic and healthy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK3GNxr3MCXBnlHZnhjnP7vqKJfa-Ro8I4gBapAYCYDGuxUHnkWuieh54v_wsuVEcoU3QZ6NoaUouMBzV9erMIdweI69j8WsMTbOWY306LG9CS7Da9W8C1JzV9nYjo46xBGmHvnfXn5MOnpdt27na7dnbitrepKfsEhUC_MS_keIOYiTFAYa1EmWcw_QtAnCKFPu6paa4iuuk1qpwjQiv4qvKO_zPKPQx9s1Cc_ItQPPKXzTJdz8XYxVxBPZ2l1pJNQyEi3ty-nsEP"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center text-white text-sm font-bold">+2</div>
+</div>
+<div class="bg-surface-container-low rounded-lg flex items-center justify-center cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+</div>
+</div>
+<!-- Product Info -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<h1 class="text-4xl md:text-5xl font-black tracking-tight text-on-surface leading-tight">Organic Salmon Dog Food</h1>
+<button class="p-3 bg-surface-container-lowest rounded-full hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg">star_half</span>
+</div>
+<span class="text-on-surface-variant text-sm font-medium">4.8 (124 reviews)</span>
+<div class="w-1 h-1 bg-outline-variant rounded-full"></div>
+<span class="text-secondary font-semibold text-sm">In Stock</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="text-5xl font-extrabold text-primary">$34.99</div>
+<p class="text-on-surface-variant text-sm">Price includes all applicable taxes and duties.</p>
+</div>
+<!-- Bag Size Selector -->
+<div class="space-y-4">
+<label class="text-sm font-bold tracking-wide uppercase text-on-surface">Select Bag Size</label>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-3 border-2 border-primary bg-primary-container/10 text-primary font-bold rounded-lg transition-all">5 lb</button>
+<button class="px-6 py-3 border-2 border-surface-container-high hover:border-outline-variant text-on-surface-variant font-medium rounded-lg transition-all">12 lb</button>
+<button class="px-6 py-3 border-2 border-surface-container-high hover:border-outline-variant text-on-surface-variant font-medium rounded-lg transition-all">25 lb</button>
+</div>
+</div>
+<!-- Quantity & Add to Cart -->
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<div class="flex items-center bg-surface-container-low rounded-full px-4 py-2 border border-outline-variant/10">
+<button class="w-10 h-10 flex items-center justify-center hover:text-primary transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="w-12 text-center font-bold text-lg">1</span>
+<button class="w-10 h-10 flex items-center justify-center hover:text-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<button class="flex-1 bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim transition-colors duration-200 font-bold py-5 px-8 rounded-full flex items-center justify-center gap-3 active:scale-95">
+<span class="material-symbols-outlined">shopping_bag</span>
+                        Add to Cart
+                    </button>
+</div>
+<!-- Features Accordion/List -->
+<div class="border-t border-surface-container-high pt-8 space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 bg-secondary-container/30 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">eco</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">100% Sustainably Sourced</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Our salmon is wild-caught from the cold Alaskan waters, ensuring the highest omega-3 content.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 bg-secondary-container/30 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">health_and_safety</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Vet Recommended</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Formulated by leading nutritionists to support sensitive skin and digestive health.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Details Tabs -->
+<section class="mt-24 space-y-12">
+<div class="flex border-b border-surface-container-high gap-12">
+<button class="pb-4 border-b-2 border-primary text-on-surface font-bold">Product Description</button>
+<button class="pb-4 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-medium transition-colors">Ingredients</button>
+<button class="pb-4 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-medium transition-colors">Feeding Guide</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="space-y-6">
+<h3 class="text-2xl font-bold">Fueling Their Wild Spirit</h3>
+<p class="text-on-surface-variant leading-relaxed">Give your dog the nourishment they deserve with our Organic Salmon Dog Food. Crafted specifically for active dogs with sensitive stomachs, this formula pairs fresh wild-caught salmon with wholesome brown rice and organic vegetables.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Grain-free &amp; no artificial preservatives
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Rich in DHA for brain development
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Boosts immune system naturally
+                        </li>
+</ul>
+</div>
+<div class="bg-surface-container-low rounded-lg p-8">
+<img class="w-full h-full object-cover rounded-md mix-blend-multiply opacity-50" data-alt="Abstract soft green and blue shapes with grain texture representing organic freshness and pet health" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnhWpz17S-eWFwkD4rARZ8MKQS7mNxdQ6wmmZAv_Q0BWbNRbfsXO6A7LFBTy2HHMBJN8ZhDyYj9pWHUoIeWag1inMYPnPwyZXjY3MC7Ts850HOqYe1_LtIrv_HyZxEJ8WFQdajKC4Q-VmZjz_DH5SZVPP08o3rGA3AmfhCox5YsZH7IKrvB413WI0jEW3tk9IH4sPGUGK93X0IkOheFLUA3dhpJ8wlzo4TRx3UswINFcAVVbP-pyv-hKL2OODSW7JwFCjr2vj0AvY4"/>
+</div>
+</div>
+</section>
+<!-- Related Products -->
+<section class="mt-32 space-y-12">
+<div class="flex justify-between items-end">
+<div>
+<h2 class="text-3xl font-extrabold tracking-tight">Other Flavors They'll Love</h2>
+<p class="text-on-surface-variant mt-2">Explore our full range of organic recipes.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all" href="#">
+                    View All Flavors
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Related Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="h-64 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Bag of organic chicken and sweet potato dog food on a wooden surface with warm atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Ev4_Zu8HL9sqcIJmF6QqQFiIagzWa4EDHsjrzh4RXpRZ_eomLPqS3lfKlpCkfAaJN6-H1PIwbT8jFO_57EY0-f5mIog_WtRF9227wE2tEo26quBZMZqFS7T1o2S4Py8vwboHQfzqwwG62tljXrxVAgDuapVg6y4s1eKMjqkmYlCf0qu3dP0EeE4HRVBi5e-PNKzcFmnheuY9C9EBTVQwKL0LA5Y0E2FO6rSwBEN6d29BSKvZRmpQ5UCJ0XJw-tZWuEmziVgDlF9c"/>
+</div>
+<div class="p-6 space-y-3">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Free-Range Chicken &amp; Sweet Potato</h4>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-sm">4.9</span>
+</div>
+<div class="text-xl font-black text-on-surface">$32.99</div>
+<button class="w-full mt-4 py-3 bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container rounded-full font-bold transition-all text-sm uppercase tracking-wider">Quick Add</button>
+</div>
+</div>
+<!-- Related Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="h-64 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Gourmet lamb and garden vegetable dog food package design, luxury editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgvosb18-HC0SSspAIw5XZGmJW1GxmfS4n-czCAaPfpS6b4mWp4fDg-jwIQJU-oXRNsZ2x862902bbQ3Uum_MDExYmcgj-2YANUmp9V111DxWWUdOngLpQ8t7xvMsLKFym6MMJKlBBVH6hTFjFaD3hs5WowhuUs9e5OUkdtp_8gWuWNxnebPX5he2oOmWTdu_wr169qW3REAmc_wyanyiwUo2eAQv1bAQx0YXObSqa0fd6QCqM9DGPTKREdMf7G4lFuufHRmze0OAi"/>
+</div>
+<div class="p-6 space-y-3">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Grass-Fed Lamb &amp; Garden Greens</h4>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-sm">4.7</span>
+</div>
+<div class="text-xl font-black text-on-surface">$38.99</div>
+<button class="w-full mt-4 py-3 bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container rounded-full font-bold transition-all text-sm uppercase tracking-wider">Quick Add</button>
+</div>
+</div>
+<!-- Related Card 3 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="h-64 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Venison and berry flavored dry dog food product shot with artistic moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7mVoguMkP221SChfHLlDjIVg6H0dnAdmtz-mcizqtjK5XN_EIxW8G0OvYWcDagOhnG_h_dr8XIMfHhxGLwf5Q9j_LFbUTO8p264r-hkH3TZYcDeWOx374skmw-exDRIFyGxW0LQxaMRA53jBslz48Yk8xt14HGAhjd-kYgvOUHCgtjrpuIZmIBYK1PTHYpDpGS2oISTxtm2-l3c9UDDI987aNG1lTxGbu21gpJt0D2rzNDDfBxUr5H1i4eCxz9pySelkw_jg1rRZ9"/>
+</div>
+<div class="p-6 space-y-3">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Venison &amp; Wild Berry Feast</h4>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-sm">5.0</span>
+</div>
+<div class="text-xl font-black text-on-surface">$44.99</div>
+<button class="w-full mt-4 py-3 bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container rounded-full font-bold transition-all text-sm uppercase tracking-wider">Quick Add</button>
+</div>
+</div>
+<!-- Related Card 4 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="h-64 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Beef and pumpkin mix premium dog food for digestive health, rich textures and colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE216Hb0aREL7EoD6W0rH1GG1t1xXu9-tUMhVRn2ewinPQuObAbhLBCEYMMbKg6aXl5NJfgyWyJmN6zsxt0Hx7_YMDsz7wwe75moWVEa1C5anXRL9ARyTGOGddRQsD4FFStEQVuBH1qdEj167l2aWc_3162wBr9MWdu90MYgx0SdzUs9fmYgM0WdBnGdKRIrqWBh1hnu36SDbvNOiQR9Ir_lAs8WPwO-j-GyzEIN1PcYjXendOGk28h-reCVacveMvVY_l5oRZgrki"/>
+</div>
+<div class="p-6 space-y-3">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Angus Beef &amp; Roasted Pumpkin</h4>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-sm">4.8</span>
+</div>
+<div class="text-xl font-black text-on-surface">$34.99</div>
+<button class="w-full mt-4 py-3 bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container rounded-full font-bold transition-all text-sm uppercase tracking-wider">Quick Add</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f1f1f0] dark:bg-zinc-800 w-full px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-screen-2xl mx-auto mt-24">
+<div class="col-span-1 md:col-span-2 space-y-6">
+<div class="text-xl font-bold text-[#2e2f2f] dark:text-white">The Digital Sanctuary</div>
+<p class="text-[#2e2f2f] dark:text-zinc-400 max-w-sm">Curating the finest essentials for your beloved companions. Quality, sustainability, and joy in every delivery.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-[#964300] dark:text-[#FF8C42]">Shop &amp; Support</h5>
+<ul class="space-y-3">
+<li><a class="text-[#2e2f2f] dark:text-zinc-400 hover:text-[#964300] dark:hover:text-[#FF8C42] transition-colors" href="#">About Us</a></li>
+<li><a class="text-[#2e2f2f] dark:text-zinc-400 hover:text-[#964300] dark:hover:text-[#FF8C42] transition-colors" href="#">Shipping Policy</a></li>
+<li><a class="text-[#2e2f2f] dark:text-zinc-400 hover:text-[#964300] dark:hover:text-[#FF8C42] transition-colors" href="#">Returns</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-[#964300] dark:text-[#FF8C42]">Legal</h5>
+<ul class="space-y-3">
+<li><a class="text-[#2e2f2f] dark:text-zinc-400 hover:text-[#964300] dark:hover:text-[#FF8C42] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-[#2e2f2f] dark:text-zinc-400 hover:text-[#964300] dark:hover:text-[#FF8C42] transition-colors" href="#">Contact</a></li>
+<li class="text-xs text-on-surface-variant pt-4">© 2024 The Digital Sanctuary. All rights reserved.</li>
+</ul>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 md:hidden bg-[#ffffff]/80 dark:bg-zinc-900/80 backdrop-blur-md shadow-[0_-4px_20px_rgba(46,47,47,0.04)] z-50 rounded-t-3xl">
+<div class="flex flex-col items-center justify-center bg-[#f9873e] text-[#451b00] rounded-full px-5 py-2 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined">storefront</span>
+<span class="text-[10px] font-semibold">Shop</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2e2f2f] dark:text-zinc-400 px-4 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] font-semibold">Search</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2e2f2f] dark:text-zinc-400 px-4 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="text-[10px] font-semibold">Cart</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2e2f2f] dark:text-zinc-400 px-4 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-semibold">Profile</span>
+</div>
+</nav>
+</body></html>
