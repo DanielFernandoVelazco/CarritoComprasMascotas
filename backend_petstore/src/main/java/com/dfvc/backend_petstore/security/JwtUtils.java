@@ -1,14 +1,15 @@
 package com.dfvc.backend_petstore.security;
 
-import io.jsonwebtoken.*;
-import io.jsonwebtoken.security.Keys;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.JWTVerifier;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.interfaces.DecodedJWT;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
-import java.security.Key;
 import java.util.Date;
 
 @Component
@@ -22,38 +23,32 @@ public class JwtUtils {
     @Value("${jwt.expiration}")
     private int jwtExpiration;
 
-    private Key key() {
-        return Keys.hmacShaKeyFor(jwtSecret.getBytes());
+    private Algorithm getAlgorithm() {
+        return Algorithm.HMAC256(jwtSecret);
     }
 
     public String generateJwtToken(Authentication authentication) {
         UserDetailsImpl userPrincipal = (UserDetailsImpl) authentication.getPrincipal();
 
-        return Jwts.builder()
-                .setSubject((userPrincipal.getUsername()))
-                .setIssuedAt(new Date())
-                .setExpiration(new Date((new Date()).getTime() + jwtExpiration))
-                .signWith(key(), SignatureAlgorithm.HS256)
-                .compact();
+        return JWT.create()
+                .withSubject(userPrincipal.getUsername())
+                .withIssuedAt(new Date())
+                .withExpiresAt(new Date((new Date()).getTime() + jwtExpiration))
+                .sign(getAlgorithm());
     }
 
     public String getUserNameFromJwtToken(String token) {
-        return Jwts.parserBuilder().setSigningKey(key()).build()
-                .parseClaimsJws(token).getBody().getSubject();
+        DecodedJWT decodedJWT = JWT.decode(token);
+        return decodedJWT.getSubject();
     }
 
     public boolean validateJwtToken(String authToken) {
         try {
-            Jwts.parserBuilder().setSigningKey(key()).build().parse(authToken);
+            JWTVerifier verifier = JWT.require(getAlgorithm()).build();
+            verifier.verify(authToken);
             return true;
-        } catch (MalformedJwtException e) {
+        } catch (Exception e) {
             logger.error("Invalid JWT token: {}", e.getMessage());
-        } catch (ExpiredJwtException e) {
-            logger.error("JWT token is expired: {}", e.getMessage());
-        } catch (UnsupportedJwtException e) {
-            logger.error("JWT token is unsupported: {}", e.getMessage());
-        } catch (IllegalArgumentException e) {
-            logger.error("JWT claims string is empty: {}", e.getMessage());
         }
         return false;
     }
